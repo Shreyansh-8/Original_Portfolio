@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyansh Pandey</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&family=Mina&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="ham">
+        <ul>
+            <li onclick="closelabel()" id="nav_home1"><a href="#mid_div">Home</a> </li>
+            <!-- <hr class="new-hr"> -->
+            <li onclick="closelabel()" class="nav1"><a href="#about_section">About</a> </li>
+            <!-- <hr class="new-hr"> -->
+            <li onclick="closelabel()" class="nav1"><a href="#project_section">Project</a> </li>
+            <!-- <hr class="new-hr"> -->
+            <li onclick="closelabel()" class="nav1"><a href="#contact_section">Contact</a> </li>
+
+        </ul>
+
+    </div>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img id="img_logo" src="/logo-modified.png" alt="logo loading....">
+            <div id="name_logo">
+                <h1>Shreyansh Pandey</h2>
+            </div>
+
+        </div>
+        <div id="nav_content">
+            <ul>
+                <li id="nav_home"><a href="#mid_div">Home</a> </li>
+
+                <li class="nav"><a href="#about_section">About</a> </li>
+
+                <li class="nav"><a href="#project_section">Project</a> </li>
+
+                <li class="nav"><a href="#contact_section">Contact</a> </li>
+
+            </ul>
+
+            <!-- <div class="item">
+                <p>Home</p>
+            </div>
+            <div class="item">
+                <p>Project</p>
+            </div>
+            <div class="item">
+                <p>About</p>
+            </div>
+            <div class="item">
+                <p>Contact</p>
+            </div> -->
+
+        </div>
+        <input type="checkbox" name="check" id="check">
+
+        <div id="hamburger">
+            <label id="close" for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            <label id="open" for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </div>
+
+
+
+    </nav>
+    <section id="mid_div">
+        <!-- <img src="/background.jpg" alt=""> -->
+        <div id="social">
+            <div class="social_icons">
+                <a href="https://www.linkedin.com/in/shreyansh-pandey-5b0624209/"> <img class="img_icon"
+                        src="/icons/linkedin.png" alt="incons loading...."></a>
+            </div>
+            <div class="social_icons">
+                <a href="https://github.com/Shreyansh-8"> <img class="img_icon" src="/icons/github.png"
+                        alt="icon loading...."></a>
+            </div>
+            <div class="social_icons">
+                <a href="https://twitter.com/Shreyansh__08"> <img class="img_icon" src="/icons/twitter.png"
+                        alt="icon loading...."></a>
+            </div>
+            <div class="social_icons">
+                <a href="https://leetcode.com/omega-08/"> <img class="img_icon" src="/icons/leetcode.png"
+                        alt="icon loading...."></a>
+            </div>
+        </div>
+        <div id="description">
+            <div id="greet">
+                <h1>Hey, I am Shreyansh Pandey</h1>
+            </div>
+            <div id="desc">
+                <p>A Frontend focused Web Developer building the Frontend of Websites and Web </p>
+                <p>Applications that leads to the success of the overall product</p>
+            </div>
+            <div id="project">
+                <a href="#project_section"><button id="btn_project">PROJECT</button></a>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="about_section">
+        <div id="about">
+            <h1>ABOUT ME</h1>
+            <p class="paragraph">Here you will find more information about me, what I do, and my current skills mostly
+                in terms of
+                programming and technology</p>
+        </div>
+        <div id="about_extra">
+            <div id="know_me">
+                <h2>Get to know me!</h2>
+                <p>
+                    I'm a Web Developer building the Front-end of Websites along with a the backend as well. Web
+                    Applications that leads to
+                    the success of the overall product. Check out some of my work in the Projects section.
+                    <br>
+                    I also like solving problems and I mainly use Java to solve DSA questions. Apart from these thing I
+                    am aalso interested in Cloud Computing and want to explore more in this field. Feel free to Connect
+                    or Follow me on
+                    my Linkedin where I post useful content related to Web Development and Programming
+                    <br>
+                    I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity
+                    that matches my skills and experience then don't hesitate to contact me.
+                </p>
+                <a href="#contact_section"><button id="contact_btn"> CONTACT</button></a>
+            </div>
+            <div id="skills">
+                <h3>My Skills</h3>
+                <canvas id="myChart" style="height:365px;width:100%;max-width:700px"></canvas>
+            </div>
+
+        </div>
+        <div id="certificate">
+            <h3 id="certificate_head">Certification</h3>
+            <div class="aws">AWS-Certified Cloud Practitioner</div>
+        </div>
+    </section>
+    <section id="project_section">
+        <div id="project">
+            <h1>PROJECTS</h1>
+            <p class="paragraph">Here you will find some of the personal and clients projects that I created with each
+                project containing
+                its own case study</p>
+        </div>
+        <div class="project_extra">
+
+
+            <div id="project_1_img">
+                <img class="img" src="/GeniusAxis.png" alt="loading image...">
+            </div>
+            <div id="project_1_desc">
+                <h3>GeniusAxis</h3>
+                <p class="paragraph">A webiste that focuses on providing a technology-based course learnings
+                    and quiz to test their learnings along with a free resume builder for users.</p>
+                <a href="https://geniusaxis.onrender.com"> <button class="project_btn">GO TO PROJECT</button></a>
+            </div>
+            <div id="project_2_img">
+                <img class="img" src="/Balanced_diet_project.png" alt="loading image...">
+            </div>
+            <div id="project_2_desc">
+                <h3>AgroNutrition</h3>
+                <p class="paragraph">AgroNutrition is a web-based project which focuses on providing methods of
+                    susainable agriculture along with a balanced diet for different age group</p>
+                <a href="https://github.com/Shreyansh-8/Agricultural-DietWebsite/tree/master"> <button
+                        class="project_btn">GO TO PROJECT</button></a>
+            </div>
+            <div id="project_3_img">
+                <img class="img" src="/Login.png" alt="loading img...">
+            </div>
+            <div id="project_3_desc">
+                <h3>Agri Tech</h3>
+                <p class="paragraph">It is a web-based which focuses on providing reasonable price to the farmers for their crops
+                    directly from the buyers without involving the vendors</p>
+                <a href="https://github.com/Shreyansh-8/E-Commerce"> <button class="project_btn"> GO TO PROJECT</button></a>
+            </div>
+        </div>
+    </section>
+    <section id="contact_section">
+        <div id="contact_head">
+            <h1>CONTACT</h1>
+            <p class="paragraph">Feel free to Contact me by submitting the form below and I will get back to you as soon
+                as possible</p>
+        </div>
+        <div id="contact_extra">
+
+            <form id="contact_here" onsubmit="sendEmail(); reset(); return false;" action="">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <label for="message">Message</label>
+                <textarea type="text" name="message" id="message" placeholder="Enter here"></textarea>
+                <div id="btn">
+                    <button id="submit_btn">SUBMIT</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+    <header id="social_section">
+        <div id="social_extra">
+            <div id="social_desc">
+                <h3>Shreyansh Pandey</h3>
+                <p>A Frontend focused Web Developer building the Frontend of Websites and Web
+                    Applications that leads to the success of the overall product</p>
+            </div>
+            <div id="social_handles">
+                <div id="social_div">
+                    <h3 id="social_head">Social</h3>
+                </div>
+                <div id="handle_div">
+                    <a href="https://www.linkedin.com/in/shreyansh-pandey-5b0624209/"> <img class="icons"
+                            src="/social_icons/linkedin.svg" alt="icon loading...."></a>
+                    <a href="https://github.com/Shreyansh-8"> <img class="icons" src="/social_icons/github.svg"
+                            alt="icon loading...."></a>
+                    <a href="https://twitter.com/Shreyansh__08"> <img class="icons" src="/social_icons/twitter.svg"
+                            alt="icon loading...."></a>
+                </div>
+
+            </div>
+        </div>
+        <hr style="width:85%;text-align:center;margin: auto;">
+        <div id="copyright">
+            <p id="copyright_tag">&#169; Copyright 2023. Made by <strong> Shreyansh Pandey </strong></p>
+        </div>
+
+    </header>
+    <script>
+        const xValues = ["HTML", "CSS", "JavaScript", "Nodejs", "Java", "SQL", "Github"];
+        const yValues = [7, 7, 7, 6, 7, 7, 5, 10, 0];
+        const barColors = ["#7843e9", "#7843e9", "#7843e9", "#7843e9", "#7843e9", "#7843e9", "#7843e9"];
+
+        new Chart("myChart", {
+            type: "bar",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                }
+            }
+        });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+        function sendEmail() {
+            let name = document.getElementById('name').value;
+            let from = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+            console.log(from);
+            Email.send({
+                SecureToken: "e196001e-e1a0-412f-89b3-5f84ec895bcd",
+                To: 'pandey.shreyansh0802@gmail.com',
+                From: "pandeyshreyansh50@gmail.com",
+                Subject: "Enquiry from Portfolio",
+                Body: "Name :" + name +
+                    "<br> Email :" + from +
+                    "<br> Message :" + message
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
+<!-- <div id="about_head">
+    <h1>ABOUT ME</h1>
+</div>
+<div id="about_desc">
+    <p>
+        
+    </p>
+</div> -->
